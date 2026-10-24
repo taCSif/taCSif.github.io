@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Taif Alsufiani</title>
+  <meta name="description" content="Taif Alsufiani — AI Product & Solutions in Riyadh. RAG systems, machine learning, and AI products from idea to first version.">
+  <link rel="icon" href="logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Reem+Kufi:wght@500;700&display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <div class="sadu" aria-hidden="true"></div>
+
+  <!-- ========== Header ========== -->
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="Taif Alsufiani, back to top">
+        <span class="logo-slot"><em>T</em><img src="logo.png" alt=""></span>
+        <span>Taif Alsufiani</span>
+      </a>
+      <button type="button" class="ask-btn" data-open-chat><i class="dot"></i>Ask Taif</button>
+    </div>
+  </header>
+
+  <main class="wrap" id="top">
+
+    <!-- ========== Overview ========== -->
+    <section class="hero" aria-label="Overview">
+      <div>
+        <span class="status"><i class="dot"></i>Open to work · Riyadh</span>
+        <span class="hello" dir="rtl" lang="ar">أهلًا، أنا طيف</span>
+        <h1>Taif Alsufiani</h1>
+        <p class="role">AI Product &amp; Solutions</p>
+        <p class="lede">Computer Science graduate who turns ideas into working AI products: a focused first version, shipped, then improved.</p>
+      </div>
+      <div class="mark" aria-hidden="true"><em>T</em><img src="logo.png" alt=""></div>
+    </section>
+
+    <!-- ========== Tabs ========== -->
+    <div class="choose" role="tablist" aria-label="Choose what to see">
+      <button type="button" class="tab" role="tab" id="tab-about" aria-controls="about" aria-selected="true">
+        <b>About<i> Taif</i></b><span>Who I am, my vision and goals</span>
+      </button>
+      <button type="button" class="tab" role="tab" id="tab-projects" aria-controls="projects" aria-selected="false" tabindex="-1">
+        <b>Projects</b><span>Done and in progress</span>
+      </button>
+      <button type="button" class="tab" role="tab" id="tab-cv" aria-controls="cv" aria-selected="false" tabindex="-1">
+        <b>CV</b><span>Experience and education</span>
+      </button>
+      <button type="button" class="tab" role="tab" id="tab-contact" aria-controls="contact" aria-selected="false" tabindex="-1">
+        <b>Contact</b><span>Email, LinkedIn, GitHub, phone</span>
+      </button>
+    </div>
+
+    <!-- ========== About ========== -->
+    <section class="panel" id="about" role="tabpanel" aria-labelledby="tab-about">
+      <h2>About Taif</h2>
+
+      <div class="about-main">
+        <div class="card bio">
+          <span class="lbl">Who I am</span>
+          <h3>A builder on the product side of AI</h3>
+          <p>I'm a Computer Science graduate from Imam Mohammad Ibn Saud Islamic University, with an IT diploma from Princess Nourah University before that.</p>
+          <p>At KAPSARC's Consulting Department, I built an internal AI matching tool on my own, and the organization adopted it. I also built RAG chatbots there. I like taking a real problem, cutting it down to a first version that works, and improving it with the people who use it.</p>
+          <p>Outside work, I organize events with NauaTech, a tech and startup community in Riyadh.</p>
+        </div>
+
+        <div class="stack">
+          <div class="card vision">
+            <span class="lbl">My vision</span>
+            <h3>AI that solves a real problem</h3>
+            <p>AI products should start from a real need, be proven with data early, and ship small so people can use them and shape them.</p>
+          </div>
+          <div class="card goal">
+            <span class="lbl">My goal</span>
+            <h3>Lead AI products</h3>
+            <p>I want to become a Head of AI Product. I'm building the technical and product sides together to get there.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card thinking">
+        <h3>t<span class="br">[</span><span class="ai">AI</span><span class="br">]</span>f thinking</h3>
+        <p>How I take an AI product from a problem to a first working version.</p>
+        <ol class="steps">
+          <li><b>Define the problem</b><span>Who has it, what they need answered, and what a useful first version must do.</span></li>
+          <li><b>Check the data first</b><span>Audit the data, compare a simple baseline with the model, then go, change course, or stop.</span></li>
+          <li><b>Ship a small version</b><span>Keep the scope tight. CarDeal's first version takes four inputs and gives one clear answer.</span></li>
+          <li><b>Build it to grow</b><span>Clean architecture, tests, Docker and CI/CD, so the next version is easy to add.</span></li>
+        </ol>
+      </div>
+
+      <nav class="pnav" aria-label="Sections">
+        <button type="button" class="btn next" data-go="projects">Projects →</button>
+      </nav>
+    </section>
+
+    <!-- ========== Projects ========== -->
+    <section class="panel" id="projects" role="tabpanel" aria-labelledby="tab-projects" hidden>
+      <h2>Projects</h2>
+
+      <!-- Counts are filled in by main.js -->
+      <div class="filters" role="group" aria-label="Filter projects by status">
+        <button type="button" data-filter="all" aria-pressed="true">All <span class="n"></span></button>
+        <button type="button" data-filter="done" aria-pressed="false">Done <span class="n"></span></button>
+        <button type="button" data-filter="progress" aria-pressed="false">In progress <span class="n"></span></button>
+      </div>
+
+      <div class="grid3" id="project-list">
+        <article class="card pcard" data-status="done">
+          <div class="shot" data-name="CarDeal"><img src="images/cardeal.png" alt="CarDeal screenshot"></div>
+          <div class="pbody">
+            <div class="prow"><h3>CarDeal</h3><span class="badge done">Done</span></div>
+            <p>Tells you if a used car's asking price in Saudi Arabia is a good deal. SDAIA Academy capstone, built with tests, Docker and CI/CD.</p>
+            <ul class="tags"><li>ML</li><li>scikit-learn</li><li>FastAPI</li><li>Docker</li><li>GitHub Actions</li></ul>
+            <div class="plinks"><a class="link" href="https://github.com/taCSif/CarDeal-Taif-SDAIA" target="_blank" rel="noopener">Code ↗</a></div>
+          </div>
+        </article>
+
+        <article class="card pcard" data-status="done">
+          <div class="shot" data-name="Riyal Estate"><img src="images/riyal-estate.png" alt="Riyal Estate screenshot"></div>
+          <div class="pbody">
+            <div class="prow"><h3>Riyal Estate</h3><span class="badge done">Done</span></div>
+            <p>AI real estate platform with an Arabic chatbot that answers buyers from listing data. Graduation project, team.</p>
+            <ul class="tags"><li>RAG</li><li>React</li><li>TypeScript</li><li>FastAPI</li><li>Supabase</li></ul>
+          </div>
+        </article>
+
+        <article class="card pcard" data-status="done">
+          <div class="shot" data-name="Dalilak"><img src="images/dalilak.png" alt="Dalilak screenshot"></div>
+          <div class="pbody">
+            <div class="prow"><h3>Dalilak <span lang="ar">دليلك</span></h3><span class="badge done">Done</span></div>
+            <p>Guides Riyadh entrepreneurs: suggests a neighborhood with a competitor heat map and explains Labor Law. Tuwaiq, team.</p>
+            <ul class="tags"><li>RAG</li><li>React Native</li><li>Supabase</li><li>Mapbox</li></ul>
+          </div>
+        </article>
+
+        <article class="card pcard" data-status="progress">
+          <div class="shot" data-name="Riyadh Resolve"><img src="images/riyadh-resolve.png" alt="Riyadh Resolve screenshot"></div>
+          <div class="pbody">
+            <div class="prow"><h3>Riyadh Resolve</h3><span class="badge sand">In progress</span></div>
+            <p>Predicts if a 940 municipal request will be resolved fast, normal or delayed, using only what is known when it arrives. Riyadh open data.</p>
+            <ul class="tags"><li>ML</li><li>LightGBM</li><li>FastAPI</li><li>Docker</li></ul>
+          </div>
+        </article>
+
+        <article class="card pcard" data-status="progress">
+          <div class="shot" data-name="Ask Taif"><img src="images/ask-taif.png" alt="Ask Taif screenshot"></div>
+          <div class="pbody">
+            <div class="prow"><h3>Ask Taif</h3><span class="badge sand">In progress</span></div>
+            <p>The assistant on this site. It will answer questions about my work from my own documents.</p>
+            <ul class="tags"><li>RAG</li><li>LangChain</li><li>Local LLM</li></ul>
+            <div class="plinks"><button type="button" class="link" data-open-chat>Try it →</button></div>
+          </div>
+        </article>
+      </div>
+
+      <nav class="pnav" aria-label="Sections">
+        <button type="button" class="btn" data-go="about">← About Taif</button>
+        <button type="button" class="btn next" data-go="cv">CV →</button>
+      </nav>
+    </section>
+
+    <!-- ========== CV ========== -->
+    <section class="panel" id="cv" role="tabpanel" aria-labelledby="tab-cv" hidden>
+      <h2>CV</h2>
+
+      <div class="card cv-top">
+        <p>The full CV as a PDF, plus the highlights below.</p>
+        <a class="btn primary" href="cv.pdf" target="_blank" rel="noopener">Download CV ↗</a>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <span class="lbl">Experience</span>
+          <div class="jobs">
+            <div class="job">
+              <span class="when">2026</span>
+              <div>
+                <b>Intern, Consulting Department</b><span class="org">KAPSARC</span>
+                <p>Built an internal AI matching tool that was adopted, RAG and data chatbots, and an LLM load test for infrastructure planning.</p>
+              </div>
+            </div>
+            <div class="job">
+              <span class="when">COOP</span>
+              <div><b>COOP Trainee, Enterprise Storage</b><span class="org">SDAIA</span></div>
+            </div>
+            <div class="job">
+              <span class="when">Earlier</span>
+              <div>
+                <b>IT Trainer</b><span class="org">Emdaad Al-Maarefah</span>
+                <p>Taught computer fundamentals to 60+ learners.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack">
+          <div class="card">
+            <span class="lbl">Education</span>
+            <ul class="list">
+              <li><b>B.Sc. Computer Science · GPA 4.54/5</b><span>IMSIU · 2026 · Second Class Honors</span></li>
+              <li><b>Diploma, Information Technology</b><span>PNU · 2020–2022 · First Class Honors</span></li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="lbl">Certifications</span>
+            <ul class="list">
+              <li><b>Software Engineering Practices for AI Systems</b><span>SDAIA Academy · Sep 2026</span></li>
+              <li><b>Building LLMs and Reasoning Models</b><span>Tuwaiq Club, IMSIU · 45 hours · Apr 2026</span></li>
+              <li><b>ITIL</b><span>Abad Network</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <span class="lbl">Skills</span>
+          <ul class="tags">
+            <li>RAG</li><li>Embeddings</li><li>Semantic search</li><li>scikit-learn</li><li>LightGBM</li><li>Python</li><li>FastAPI</li>
+            <li>React</li><li>TypeScript</li><li>Supabase</li><li>Docker</li><li>GitHub Actions</li><li>Scoping MVPs</li>
+          </ul>
+        </div>
+        <div class="card">
+          <span class="lbl">Community &amp; languages</span>
+          <ul class="list">
+            <li><b>Event Organizer · NauaTech</b><span>Jan 2024 – now</span></li>
+            <li><b>Lead, Programs &amp; Activities · Bit Club</b><span>Dec 2023 – Dec 2024</span></li>
+            <li><b>Arabic · English</b><span>Native · working proficiency</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="pnav" aria-label="Sections">
+        <button type="button" class="btn" data-go="projects">← Projects</button>
+        <button type="button" class="btn next" data-go="contact">Contact →</button>
+      </nav>
+    </section>
+
+    <!-- ========== Contact ========== -->
+    <section class="panel" id="contact" role="tabpanel" aria-labelledby="tab-contact" hidden>
+      <h2>Contact</h2>
+
+      <div class="ways">
+        <div class="card way">
+          <span class="lbl">Email</span>
+          <span class="val" id="email">taiffalsufiani.1@gmail.com</span>
+          <div class="acts"><button type="button" class="btn primary" data-copy="email">Copy email</button></div>
+        </div>
+        <div class="card way">
+          <span class="lbl">Phone</span>
+          <span class="val" id="phone">+966 59 732 6056</span>
+          <div class="acts"><button type="button" class="btn" data-copy="phone">Copy number</button></div>
+        </div>
+        <!-- TODO: replace with the real LinkedIn profile URL -->
+        <a class="card way" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+          <span class="lbl">LinkedIn</span>
+          <span class="val">Taif Alsufiani</span>
+          <span class="link">Open profile ↗</span>
+        </a>
+        <a class="card way" href="https://github.com/taCSif" target="_blank" rel="noopener">
+          <span class="lbl">GitHub</span>
+          <span class="val">taCSif</span>
+          <span class="link">Open GitHub ↗</span>
+        </a>
+      </div>
+
+      <p class="where">Based in Riyadh, open to relocation.</p>
+
+      <nav class="pnav" aria-label="Sections">
+        <button type="button" class="btn" data-go="cv">← CV</button>
+        <a class="btn next" href="#top">Back to top ↑</a>
+      </nav>
+    </section>
+
+    <!-- ========== Footer ========== -->
+    <footer>
+      <span>© 2026 Taif Alsufiani · <span lang="ar">طيف السفياني</span></span>
+      <span>Riyadh, Saudi Arabia</span>
+    </footer>
+  </main>
+
+  <!-- ========== Ask Taif (placeholder until the real assistant is built) ========== -->
+  <button type="button" class="launch" id="launch" data-open-chat aria-controls="assistant" aria-expanded="false">
+    <span class="logo-slot"><em>T</em><img src="logo.png" alt=""></span>Ask Taif
+  </button>
+
+  <aside class="chatpanel" id="assistant" aria-label="Ask Taif assistant" hidden>
+    <div class="chat-head">
+      <span class="logo-slot round"><em>T</em><img src="logo.png" alt=""></span>
+      <div><b>Ask Taif</b><small>My AI assistant · answers from my portfolio</small></div>
+      <button type="button" class="x" id="close-chat" aria-label="Close assistant">×</button>
+    </div>
+
+    <span class="soon">Coming soon</span>
+
+    <div class="msgs">
+      <div class="msg bot">Hi! I'm Taif's assistant. Ask me about her projects, skills or experience.</div>
+      <div class="msg user">What did you build at SDAIA Academy?</div>
+      <div class="msg bot">CarDeal: it estimates a fair price for a used car and tells you if the asking price is a good deal.<small>Example answer</small></div>
+    </div>
+
+    <div class="chips">
+      <button type="button">Which projects use RAG?</button>
+      <button type="button">What's your tech stack?</button>
+    </div>
+
+    <p class="note" id="chat-note" hidden>Ask Taif is still being built. Reach me by email for now.</p>
+
+    <form class="ask" id="chat-form">
+      <label for="chat-input" class="sr">Your question</label>
+      <input id="chat-input" type="text" placeholder="Ask me anything…" autocomplete="off">
+      <button type="submit">Ask</button>
+    </form>
+  </aside>
+
+</body>
+</html>
